@@ -132,7 +132,7 @@ Sensor</text>
 <wire x1="7.62" y1="24.13" x2="0" y2="24.13" width="0.2032" layer="20"/>
 <wire x1="0" y1="24.13" x2="0" y2="0" width="0.2032" layer="20"/>
 <text x="-41.91" y="-16.51" size="1.778" layer="25" font="vector" ratio="15">M.Hord</text>
-<text x="0.508" y="16.256" size="1.27" layer="16" font="vector" ratio="15" rot="MR90">v01</text>
+<text x="0.508" y="20.066" size="1.27" layer="16" font="vector" ratio="15" rot="MR90">v10</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -341,15 +341,14 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="Sparkfun">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
 a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
-design rules under a new name.
-</description>
+design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
@@ -364,11 +363,11 @@ design rules under a new name.
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="8mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="0.6mm"/>
+<param name="msWidth" value="8mil"/>
+<param name="msDrill" value="20mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -378,15 +377,15 @@ design rules under a new name.
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="12mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="12mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="10mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -403,7 +402,7 @@ design rules under a new name.
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="20mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -416,7 +415,7 @@ design rules under a new name.
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
-<param name="maxErrors" value="999999"/>
+<param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
@@ -524,8 +523,8 @@ design rules under a new name.
 <element name="R2" library="SparkFun-Resistors" package="0402-RES" value="10k" x="2.54" y="17.78" rot="R270">
 <attribute name="PROD_ID" value="RES-00824" x="-22.86" y="-20.32" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="1X03_SMD_RA_MALE" value="" x="3.81" y="1.27">
-<attribute name="PROD_ID" value="CONN-10925" x="3.81" y="1.27" size="1.778" layer="27" display="off"/>
+<element name="JP1" library="SparkFun-Connectors" package="1X03_SMD_RA_MALE" value="" x="3.81" y="1.27" rot="MR0">
+<attribute name="PROD_ID" value="CONN-10925" x="3.81" y="1.27" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="STANDOFF1" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="3.81" y="12.7"/>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="SFE-LOGO-FLAME" value="LOGO-SFESK" x="4.826" y="17.272" rot="MR0"/>
@@ -547,15 +546,14 @@ design rules under a new name.
 <wire x1="2.54" y1="18.43" x2="2.54" y2="19.177" width="0.254" layer="1"/>
 <wire x1="2.54" y1="19.177" x2="2.01" y2="19.707" width="0.254" layer="1"/>
 <wire x1="2.01" y1="20.69" x2="2.01" y2="19.707" width="0.254" layer="1"/>
-<wire x1="2.54" y1="18.43" x2="1.92" y2="18.43" width="0.254" layer="1"/>
-<wire x1="1.92" y1="18.43" x2="1.524" y2="18.034" width="0.254" layer="1"/>
-<wire x1="1.524" y1="18.034" x2="1.524" y2="16.764" width="0.254" layer="1"/>
-<wire x1="1.524" y1="16.764" x2="2.159" y2="16.129" width="0.254" layer="1"/>
-<wire x1="2.159" y1="16.129" x2="5.969" y2="16.129" width="0.254" layer="1"/>
-<wire x1="5.969" y1="16.129" x2="6.858" y2="15.24" width="0.254" layer="1"/>
-<wire x1="6.858" y1="15.24" x2="6.858" y2="10.668" width="0.254" layer="1"/>
-<wire x1="6.858" y1="10.668" x2="6.35" y2="10.16" width="0.254" layer="1"/>
-<wire x1="6.35" y1="10.16" x2="6.35" y2="6.27" width="0.254" layer="1"/>
+<wire x1="1.27" y1="6.27" x2="1.27" y2="10.287" width="0.254" layer="16"/>
+<wire x1="1.27" y1="10.287" x2="0.508" y2="11.049" width="0.254" layer="16"/>
+<wire x1="2.54" y1="18.43" x2="1.539" y2="18.43" width="0.254" layer="1"/>
+<wire x1="1.539" y1="18.43" x2="0.889" y2="17.78" width="0.254" layer="1"/>
+<via x="0.889" y="17.78" extent="1-16" drill="0.508"/>
+<wire x1="0.889" y1="17.78" x2="0.889" y2="16.383" width="0.254" layer="16"/>
+<wire x1="0.889" y1="16.383" x2="0.508" y2="16.002" width="0.254" layer="16"/>
+<wire x1="0.508" y1="16.002" x2="0.508" y2="11.049" width="0.254" layer="16"/>
 </signal>
 <signal name="5V">
 <contactref element="JP1" pad="2"/>
@@ -575,19 +573,13 @@ design rules under a new name.
 <wire x1="1.397" y1="10.668" x2="2.54" y2="9.525" width="0.254" layer="1"/>
 <wire x1="2.54" y1="9.525" x2="3.429" y2="9.525" width="0.254" layer="1"/>
 <wire x1="3.429" y1="9.525" x2="3.81" y2="9.144" width="0.254" layer="1"/>
-<wire x1="3.81" y1="9.144" x2="3.81" y2="6.27" width="0.254" layer="1"/>
+<wire x1="3.81" y1="9.144" x2="3.81" y2="6.27" width="0.254" layer="16"/>
+<via x="3.81" y="9.144" extent="1-16" drill="0.508"/>
 </signal>
 <signal name="GND">
 <contactref element="JP1" pad="1"/>
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="2"/>
-<wire x1="1.27" y1="6.27" x2="1.27" y2="8.509" width="0.254" layer="1"/>
-<wire x1="1.27" y1="8.509" x2="1.016" y2="8.763" width="0.254" layer="1"/>
-<wire x1="1.016" y1="8.763" x2="1.016" y2="9.779" width="0.254" layer="1"/>
-<wire x1="1.016" y1="9.779" x2="0.762" y2="10.033" width="0.254" layer="1"/>
-<wire x1="0.762" y1="10.033" x2="0.762" y2="22.225" width="0.254" layer="1"/>
-<wire x1="2.01" y1="22.49" x2="1.027" y2="22.49" width="0.254" layer="1"/>
-<wire x1="1.027" y1="22.49" x2="0.762" y2="22.225" width="0.254" layer="1"/>
 <wire x1="2.01" y1="22.49" x2="3.059" y2="22.49" width="0.254" layer="1"/>
 <wire x1="3.059" y1="22.49" x2="3.937" y2="23.368" width="0.254" layer="1"/>
 <wire x1="3.937" y1="23.368" x2="6.477" y2="23.368" width="0.254" layer="1"/>
@@ -595,6 +587,13 @@ design rules under a new name.
 <wire x1="6.858" y1="22.987" x2="6.858" y2="20.955" width="0.254" layer="1"/>
 <wire x1="6.858" y1="20.955" x2="6.593" y2="20.69" width="0.254" layer="1"/>
 <wire x1="5.61" y1="20.69" x2="6.593" y2="20.69" width="0.254" layer="1"/>
+<wire x1="6.35" y1="6.27" x2="6.35" y2="10.795" width="0.254" layer="16"/>
+<wire x1="6.35" y1="10.795" x2="6.985" y2="11.43" width="0.254" layer="16"/>
+<wire x1="6.985" y1="11.43" x2="6.985" y2="18.415" width="0.254" layer="16"/>
+<wire x1="6.985" y1="18.415" x2="6.604" y2="18.796" width="0.254" layer="16"/>
+<via x="6.604" y="18.796" extent="1-16" drill="0.508"/>
+<wire x1="6.604" y1="18.796" x2="5.61" y2="19.79" width="0.254" layer="1"/>
+<wire x1="5.61" y1="20.69" x2="5.61" y2="19.79" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
