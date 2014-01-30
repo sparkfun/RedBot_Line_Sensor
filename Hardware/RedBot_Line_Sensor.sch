@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6086,7 +6086,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LOGO1" library="SparkFun-Aesthetics" deviceset="LOGO-SFE" device="SK"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="U1" library="SparkFun-Sensors" deviceset="QRE1113" device="SMD-W" value="QRE1113SMD-W"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="100-1%" device="" value="100"/>
@@ -6109,7 +6108,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 <instance part="SUPPLY1" gate="G$1" x="124.46" y="121.92"/>
 <instance part="GND1" gate="1" x="124.46" y="81.28"/>
-<instance part="LOGO1" gate="G$1" x="241.3" y="17.78"/>
 <instance part="LOGO2" gate="G$1" x="236.22" y="45.72"/>
 <instance part="U1" gate="G$1" x="137.16" y="96.52" smashed="yes">
 <attribute name="VALUE" x="143.002" y="99.568" size="1.778" layer="96"/>
