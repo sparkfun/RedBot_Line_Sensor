@@ -11,13 +11,15 @@ Design files and firmware files for the [RedBot Line Sensor](https://www.sparkfu
 Repository Contents
 -------------------
 
-* **/hardware** - Eagle PCB layout files
+* **/Hardware** - Eagle PCB layout files
 * **/Production Files** - Files to support SparkFun production
 
 
 License Information
 -------------------
+The hardware is released under [Creative Commons ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+The code is beerware; if you see me (or any other SparkFun employee) at the local, and you've found our code helpful, please buy us a round!
 
-All contents of this repository are released under [Creative Commons Share-alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
+Distributed as-is; no warranty is given.
 
 Authors: Mike Hord @ SparkFun Electonics
