@@ -3,7 +3,7 @@ RedBot Line Sensor
 
 Line following sensor for the RedBot
 
-[![RedBot Line Sensor](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/7/6/9/11769-06_medium.jpg)  
+[![RedBot Line Sensor](https://cdn.sparkfun.com/assets/parts/8/0/0/4/11769-06.jpg)  
 *RedBot Line Sensor*](https://www.sparkfun.com/products/11769)
 
 Design files and firmware files for the [RedBot Line Sensor](https://www.sparkfun.com/products/11769).
